@@ -1,0 +1,12 @@
+version: "2"
+services:
+  opportunities:
+    build: .
+    restart: always
+    container_name: opportunities
+    volumes:
+      - ".:/newUI"
+      - "./node_modules:/newUI/node_modules"
+    command: /bin/bash -c -l "npm install && npm run dev"
+    ports:
+      - "3000:3000"
