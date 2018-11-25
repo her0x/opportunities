@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "micro",
     "dev": "micro-dev",
-    "inspect": "node --inspect node_modules/.bin/micro-dev"
+    "inspect": "node --inspect=0.0.0.0:9229 node_modules/.bin/micro-dev"
   },
   "author": "",
   "license": "ISC",

@@ -5,8 +5,9 @@ services:
     restart: always
     container_name: opportunities
     volumes:
-      - ".:/newUI"
-      - "./node_modules:/newUI/node_modules"
-    command: /bin/bash -c -l "npm install && npm run dev"
+      - ".:/opportunities"
+      - "./node_modules:/opportunities/node_modules"
     ports:
       - "3000:3000"
+      - "9229:9229"
+    command: /bin/bash -c -l "npm install && npm run inspect"

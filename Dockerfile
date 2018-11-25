@@ -1,5 +1,9 @@
 FROM node:latest
 
-ENV APP_HOME /newUI
+RUN mkdir /opportunities
+
+ENV APP_HOME /opportunities
+
 WORKDIR $APP_HOME
+
 COPY . $APP_HOME
